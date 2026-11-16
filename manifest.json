@@ -1,0 +1,27 @@
+{
+    "_note":  "Gói phần mềm VAS phát hành từ repo này — sinh tự động từ setup/tools-manifest.json của VAS (tools/vas-repos/make-repos.ps1). Không sửa tay.",
+    "packages":  [
+                     {
+                         "id":  "natron",
+                         "vasRepo":  "Natron-VAS",
+                         "boCai":  "thanh-phan",
+                         "title":  "Natron",
+                         "version":  "2.5.0",
+                         "file":  "Natron-2.5.0-Windows-x86_64.zip",
+                         "url":  "https://github.com/NatronGitHub/Natron/releases/download/v2.5.0/Natron-2.5.0-Windows-x86_64.zip",
+                         "sha256":  "CAED0B649FF2515B963F0B4FC009EB451A41D8BA3D6E5D4260253DD9E104C517",
+                         "license":  "GPL-2.0",
+                         "home":  "https://natrongithub.github.io",
+                         "sourceCode":  "https://github.com/NatronGitHub/Natron/releases/tag/v2.5.0",
+                         "sources":  [
+                                         "https://github.com/NatronGitHub/Natron/archive/refs/tags/v2.5.0.tar.gz"
+                                     ],
+                         "sourceGaps":  "Gói kèm plugin OpenFX (openfx-io, openfx-misc, openfx-arena) và thư viện: mã nguồn theo thẻ v2.5.0 của từng kho.",
+                         "update":  {
+                                        "kind":  "github",
+                                        "repo":  "NatronGitHub/Natron",
+                                        "asset":  "^Natron-([0-9.]+)-Windows-x86_64\\.zip$"
+                                    }
+                     }
+                 ]
+}
